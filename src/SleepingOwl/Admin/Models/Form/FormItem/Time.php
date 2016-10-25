@@ -26,6 +26,6 @@ class Time extends BaseTime
 	{
 		$this->attributes['data-date-pickdate'] = 'false';
 		$this->attributes['data-date-useseconds'] = $this->showSeconds;
-		return $this->formBuilder->datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes, DateFormatter::NONE, $this->showSeconds ? DateFormatter::MEDIUM : DateFormatter::SHORT);
+		return $this->formBuilder->_datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes, DateFormatter::NONE, $this->showSeconds ? DateFormatter::MEDIUM : DateFormatter::SHORT);
 	}
 }

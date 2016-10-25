@@ -38,11 +38,11 @@ It includes:
 
             Laravel 4.1 - 5.0
 	    'SleepingOwl\Admin\AdminServiceProvider',
-	    'Illuminate\Html\HtmlServiceProvider',
+	    'Collective\Html\HtmlServiceProvider',
 
             Laravel 5.1.*
             SleepingOwl\Admin\AdminServiceProvider::class,
-	    Illuminate\Html\HtmlServiceProvider::class,
+	    Collective\Html\HtmlServiceProvider::class,
 
  3. Add this to the facades in `config/app.php`:
 
@@ -55,8 +55,8 @@ It includes:
 		'FormItem' 			=> 'SleepingOwl\Admin\Models\Form\FormItem',
 		'ModelItem'			=> 'SleepingOwl\Admin\Models\ModelItem',
 		
-		'Form'      => 'Illuminate\Html\FormFacade',
-		'Html'      => 'Illuminate\Html\HtmlFacade',
+		'Form'      => 'Collective\Html\FormFacade',
+		'Html'      => 'Collective\Html\HtmlFacade',
 
             Laravel 5.1.*
 		'Admin'				=> SleepingOwl\Admin\Admin::class,
@@ -67,8 +67,8 @@ It includes:
 		'FormItem' 			=> SleepingOwl\Admin\Models\Form\FormItem::class,
 		'ModelItem'			=> SleepingOwl\Admin\Models\ModelItem::class,
 		
-		'Form'      => Illuminate\Html\FormFacade::class,
-		'Html'      => Illuminate\Html\HtmlFacade::class,
+		'Form'      => Collective\Html\FormFacade::class,
+		'Html'      => Collective\Html\HtmlFacade::class,
 
                 
 

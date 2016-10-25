@@ -5,7 +5,7 @@ class Date extends BaseTime
 	public function render()
 	{
 		$this->attributes['data-date-picktime'] = false;
-		return $this->formBuilder->datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes);
+		return $this->formBuilder->_datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes);
 	}
 
 	public function getValidationRules()

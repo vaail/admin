@@ -10,7 +10,7 @@ class Timestamp extends Time
 	public function render()
 	{
 		$this->attributes['data-date-useseconds'] = $this->showSeconds;
-		return $this->formBuilder->datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes, DateFormatter::SHORT, $this->showSeconds ? DateFormatter::MEDIUM : DateFormatter::SHORT);
+		return $this->formBuilder->_datetime($this->name, $this->label, $this->getValueFromForm(), $this->attributes, DateFormatter::SHORT, $this->showSeconds ? DateFormatter::MEDIUM : DateFormatter::SHORT);
 	}
 
 	public function getValidationRules()

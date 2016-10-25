@@ -1,6 +1,6 @@
 <?php namespace SleepingOwl\Html;
 
-use Illuminate\Html\HtmlBuilder as IlluminateHtmlBuilder;
+use Collective\Html\HtmlBuilder as IlluminateHtmlBuilder;
 
 /**
  * Class HtmlBuilder

@@ -7,7 +7,7 @@
  2. After composer update, add service providers to the `config/app.php`
 
 	    'SleepingOwl\Admin\AdminServiceProvider',
-	    'Illuminate\Html\HtmlServiceProvider',
+	    'Collective\Html\HtmlServiceProvider',
 
  3. Add this to the facades in `config/app.php`:
 
@@ -18,8 +18,8 @@
 		'FormItem' 			=> 'SleepingOwl\Admin\Models\Form\FormItem',
 		'ModelItem'			=> 'SleepingOwl\Admin\Models\ModelItem',
 		
-		'Form'      => 'Illuminate\Html\FormFacade',
-		'Html'      => 'Illuminate\Html\HtmlFacade',
+		'Form'      => 'Collective\Html\FormFacade',
+		'Html'      => 'Collective\Html\HtmlFacade',
 
  4. Run this command in terminal (if you want to know what exactly this command makes, see [install command documentation](../Commands/Install.html)):
 

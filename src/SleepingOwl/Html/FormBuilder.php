@@ -2,7 +2,7 @@
 
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
-use Illuminate\Html\FormBuilder as IlluminateFormBuilder;
+use Collective\Html\FormBuilder as IlluminateFormBuilder;
 use Illuminate\Support\ViewErrorBag;
 use Lang;
 use SleepingOwl\DateFormatter\DateFormatter;
@@ -132,7 +132,7 @@ class FormBuilder extends IlluminateFormBuilder
 	 * @param int $timeFormat
 	 * @return string
 	 */
-	public function datetime($name, $label, $value = null, array $options = [], $dateFormat = DateFormatter::SHORT,
+	public function _datetime($name, $label, $value = null, array $options = [], $dateFormat = DateFormatter::SHORT,
 							 $timeFormat = DateFormatter::NONE)
 	{
 		$value = $this->getValueAttribute($name, $value);

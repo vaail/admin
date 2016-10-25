@@ -30,8 +30,8 @@ class AdminTest extends PHPUnit_Framework_TestCase
 		$app->shouldReceive('make')->with('path');
 		Facade::setFacadeApplication($app);
 
-		Mockery::mock('\Illuminate\Html\HtmlBuilder');
-		Mockery::mock('\Illuminate\Html\FormBuilder');
+		Mockery::mock('\Collective\Html\HtmlBuilder');
+		Mockery::mock('\Collective\Html\FormBuilder');
 		$this->htmlBuilder = Mockery::mock('\SleepingOwl\Html\HtmlBuilder');
 		$formBuilder = Mockery::mock('\SleepingOwl\Html\FormBuilder');
 		$finder = Mockery::mock('\Symfony\Component\Finder\Finder');
